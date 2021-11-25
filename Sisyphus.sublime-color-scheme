@@ -1,0 +1,146 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+    "name": "Sisyphus",
+    "author": "Daniel Lindsley",
+    "version": "1.0.0",
+    "variables":
+    {
+        "black": "#1F1F1F",
+        "bg": "#F8F7F3",
+        "dark_gray": "#333333",
+        "gray1": "#777777",
+        "built_in": "#3164B9",
+    },
+    "globals":
+    {
+        "foreground": "var(black)",
+        "background": "var(bg)",
+        "caret": "var(dark_gray)",
+        "block_caret": "color(var(dark_gray) alpha(0.2))",
+        "block_caret_border": "color(var(dark_gray) alpha(0.8))",
+        "selection": "#C8C8C8",
+        "selection_border": "#A8A8A8",
+        "invisibles": "color(var(black) alpha(0.35))",
+        "misspelling": "#FF8888",
+        "find_highlight_foreground": "var(bg)",
+        "find_highlight": "var(black)",
+        "brackets_options": "underline",
+        "bracket_contents_options": "underline",
+    },
+    "rules":
+    [
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "var(gray1)"
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "foreground": "#228855",
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "#3366AA",
+        },
+        {
+            "name": "Built-in constant",
+            "scope": "constant, constant.language",
+            "foreground": "#AA33AA",
+        },
+        {
+            "name": "User-defined constant",
+            "scope": "constant.character, constant.other",
+            "foreground": "#AA33AA"
+        },
+        {
+            "name": "Escape Chars",
+            "scope": "constant.character.escape",
+            "foreground": "#3399BB",
+            "font_style": "bold",
+        },
+        {
+            "name": "Variable",
+            "scope": "variable",
+            "foreground": "#997733",
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word, source.ruby keyword.declaration",
+            "foreground": "#3366AA",
+        },
+        {
+            "name": "Keyword (Control)",
+            "scope": "keyword.control",
+            "foreground": "#DD5511",
+        },
+        {
+            "name": "Entity name",
+            "scope": "entity.name - (entity.name.filename | entity.name.section | entity.name.tag | entity.name.label)",
+            "foreground": "#114499",
+        },
+        {
+            "name": "Function",
+            "scope": "variable.function",
+            "foreground": "#114499",
+        },
+        {
+            "name": "Function argument",
+            "scope": "variable.parameter - (source.c | source.c++ | source.objc | source.objc++)",
+            "foreground": "#3366AA",
+            "font_style": "italic"
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type",
+            "foreground": "#AA9966",
+            "font_style": "bold"
+        },
+        {
+            "name": "Storage modifier",
+            "scope": "storage.modifier",
+            "foreground": "#BBBBBB",
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class, entity.other.attribute-name",
+            "foreground": "#114488",
+            "font_style": "italic"
+        },
+        {
+            "name": "Language variable",
+            "scope": "variable.language",
+            "foreground": "#117755",
+            "font_style": "italic"
+        },
+        {
+            "name": "Library function",
+            "scope": "support.function, support.macro",
+            "foreground": "var(built_in)",
+            "font_style": "italic",
+        },
+        {
+            "name": "Library constant",
+            "scope": "support.constant",
+            "foreground": "var(built_in)"
+        },
+        {
+            "name": "Library class/type",
+            "scope": "support.type, support.class",
+            "foreground": "var(built_in)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Library module",
+            "scope": "support.module"
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid, invalid.deprecated",
+            "foreground": "#FFFFFF",
+            "background": "#DD7722",
+            "font_style": "glow",
+        },
+    ]
+}
